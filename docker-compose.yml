@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  backend:
+    image: test-123
+    container_name: backend-${ENV}
+    ports:
+      - "${HOST_PORT}:${CONTAINER_PORT}"
